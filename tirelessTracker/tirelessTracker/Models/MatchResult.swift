@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum MatchResult {
+enum MatchResult: String {
     case win
     case loss
     case draw
 
-    var shortTitle: String {
+    var title: String {
         switch self {
         case .win: return "W"
         case .loss: return "L"

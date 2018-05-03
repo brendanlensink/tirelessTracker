@@ -8,6 +8,7 @@
 
 import Eureka
 import Foundation
+import RealmSwift
 
 class LogMatchVC: FormViewController {
 
@@ -15,6 +16,8 @@ class LogMatchVC: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        Realm.Configuration.defaultConfiguration.deleteRealmIfMigrationNeeded = true
 
         navigationOptions = RowNavigationOptions.Enabled.union(.StopDisabledRow)
         animateScroll = true
@@ -81,7 +84,7 @@ class LogMatchVC: FormViewController {
                     return
                 }
 
-                print("ready! \(self.match.description)")
+                self.match.store()
             }
     }
 

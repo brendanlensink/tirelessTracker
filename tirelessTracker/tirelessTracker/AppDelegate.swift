@@ -6,6 +6,7 @@
 //  Copyright © 2018 Steamclock. All rights reserved.
 //
 
+import RealmSwift
 import UIKit
 
 @UIApplicationMain
@@ -14,6 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
         return true
     }
+}
+
+extension Realm {
+    // swiftlint:disable force_try
+    static let shared = try! Realm()
 }

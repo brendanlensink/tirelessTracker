@@ -33,7 +33,7 @@ class Game: Equatable {
             return "Incomplete"
         }
 
-        return "\(result.shortTitle)"
+        return "\(result.title)"
     }
 
     static func == (lhs: Game, rhs: Game) -> Bool {
