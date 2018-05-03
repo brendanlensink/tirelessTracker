@@ -17,6 +17,9 @@
 		B3AF0020209B617500C69B6F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF001F209B617500C69B6F /* Game.swift */; };
 		B3AF0022209B61E000C69B6F /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF0021209B61E000C69B6F /* Identifier.swift */; };
 		B3DDFE12209BB1520068C9C1 /* RealmMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDFE11209BB1520068C9C1 /* RealmMatch.swift */; };
+		B3DDFE14209BBF230068C9C1 /* ViewMatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDFE13209BBF230068C9C1 /* ViewMatchesVC.swift */; };
+		B3DDFE16209BC4810068C9C1 /* ViewMatchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDFE15209BC4810068C9C1 /* ViewMatchRow.swift */; };
+		B3DDFE1A209BC5C00068C9C1 /* ViewMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDFE19209BC5C00068C9C1 /* ViewMatchVC.swift */; };
 		B3E5F5E2209B5D62009D1BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E1209B5D62009D1BEF /* AppDelegate.swift */; };
 		B3E5F5E5209B5D62009D1BEF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */; };
 		B3E5F5E8209B5D62009D1BEF /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E7209B5D62009D1BEF /* Bundle+Extension.swift */; };
@@ -51,6 +54,9 @@
 		B3AF001F209B617500C69B6F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		B3AF0021209B61E000C69B6F /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		B3DDFE11209BB1520068C9C1 /* RealmMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMatch.swift; sourceTree = "<group>"; };
+		B3DDFE13209BBF230068C9C1 /* ViewMatchesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMatchesVC.swift; sourceTree = "<group>"; };
+		B3DDFE15209BC4810068C9C1 /* ViewMatchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMatchRow.swift; sourceTree = "<group>"; };
+		B3DDFE19209BC5C00068C9C1 /* ViewMatchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMatchVC.swift; sourceTree = "<group>"; };
 		B3E5F5DE209B5D62009D1BEF /* tirelessTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tirelessTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E5F5E1209B5D62009D1BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				B32E98B3209B72E800673D13 /* GameRow.swift */,
+				B3DDFE15209BC4810068C9C1 /* ViewMatchRow.swift */,
 			);
 			path = Eureka;
 			sourceTree = "<group>";
@@ -169,6 +176,8 @@
 				B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */,
 				B32E98B6209B732C00673D13 /* LogGameVC.swift */,
 				B3E5F60B209B6024009D1BEF /* LogMatchVC.swift */,
+				B3DDFE13209BBF230068C9C1 /* ViewMatchesVC.swift */,
+				B3DDFE19209BC5C00068C9C1 /* ViewMatchVC.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -386,7 +395,9 @@
 				B3E5F5E2209B5D62009D1BEF /* AppDelegate.swift in Sources */,
 				B3DDFE12209BB1520068C9C1 /* RealmMatch.swift in Sources */,
 				B3E5F5E8209B5D62009D1BEF /* Bundle+Extension.swift in Sources */,
+				B3DDFE16209BC4810068C9C1 /* ViewMatchRow.swift in Sources */,
 				B3AF001A209B60BC00C69B6F /* Format.swift in Sources */,
+				B3DDFE14209BBF230068C9C1 /* ViewMatchesVC.swift in Sources */,
 				B3AF0018209B608F00C69B6F /* Deck.swift in Sources */,
 				B32E98B7209B732C00673D13 /* LogGameVC.swift in Sources */,
 				B3AF0022209B61E000C69B6F /* Identifier.swift in Sources */,
@@ -394,6 +405,7 @@
 				B3E5F60C209B6024009D1BEF /* LogMatchVC.swift in Sources */,
 				B3F725CD209B698600C9E17F /* Date+ToMS.swift in Sources */,
 				B32E98B4209B72E800673D13 /* GameRow.swift in Sources */,
+				B3DDFE1A209BC5C00068C9C1 /* ViewMatchVC.swift in Sources */,
 				B3AF001C209B610100C69B6F /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,9 +11,9 @@ import RealmSwift
 
 typealias MatchID = Identifier<Match>
 
-class Match {
-    let id: MatchID = Match.generateID()
-    let datetime: Int = Date().millisecondsSince1970
+class Match: Equatable {
+    let id: MatchID
+    let datetime: Int
     var deck: Deck?
     var theirDeck: String?
     var result: MatchResult {
@@ -27,7 +27,25 @@ class Match {
     var wonRoll: Bool = true
     var notes: String?
 
-    init() {}
+    init() {
+        id = Match.generateID()
+        datetime = Date().millisecondsSince1970
+    }
+
+    init(id: MatchID, datetime: Int) {
+        self.id = id
+        self.datetime = datetime
+    }
+
+    var description: String {
+        var description = ""
+
+        if let event = event { description += "\(event) " }
+        description += Date(milliseconds: datetime).formatted() + " "
+        if let deck = deck { description += "\(deck.name) " }
+        if let theirDeck = theirDeck { description += "vs. \(theirDeck)" }
+        return description
+    }
 
     private static func generateID() -> MatchID {
         return MatchID(rawValue: UUID().uuidString + String(Date().millisecondsSince1970))
@@ -68,5 +86,9 @@ class Match {
         try? Realm.shared.write {
             Realm.shared.add(realmMatch)
         }
+    }
+
+    static func == (lhs: Match, rhs: Match) -> Bool {
+        return lhs.id == rhs.id
     }
 }

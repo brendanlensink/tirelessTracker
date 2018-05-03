@@ -9,7 +9,6 @@
 import Foundation
 
 struct Deck: Equatable, CustomStringConvertible {
-    let id: Int
     let created: Int
     let name: String
     let format: Format
@@ -24,6 +23,6 @@ struct Deck: Equatable, CustomStringConvertible {
     }
 
     static func == (lhs: Deck, rhs: Deck) -> Bool {
-        return lhs.id == rhs.id
+        return lhs.name == rhs.name && lhs.format == rhs.format
     }
 }

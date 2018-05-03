@@ -17,8 +17,6 @@ class LogMatchVC: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Realm.Configuration.defaultConfiguration.deleteRealmIfMigrationNeeded = true
-
         navigationOptions = RowNavigationOptions.Enabled.union(.StopDisabledRow)
         animateScroll = true
         rowKeyboardSpacing = 20
@@ -117,9 +115,9 @@ class LogMatchVC: FormViewController {
     }
 
     func makeFakeDecks() -> [Deck] {
-        let deck1 = Deck(id: 1, created: Date().millisecondsSince1970, name: "Test Deck 1", format: .legacy, version: nil)
-        let deck2 = Deck(id: 2, created: Date().millisecondsSince1970, name: "Test Deck 2", format: .modern, version: nil)
-        let deck3 = Deck(id: 3, created: Date().millisecondsSince1970, name: "Test Deck 3", format: .legacy, version: nil)
+        let deck1 = Deck(created: Date().millisecondsSince1970, name: "Test Deck 1", format: .legacy, version: nil)
+        let deck2 = Deck(created: Date().millisecondsSince1970, name: "Test Deck 2", format: .modern, version: nil)
+        let deck3 = Deck(created: Date().millisecondsSince1970, name: "Test Deck 3", format: .legacy, version: nil)
         return [deck1, deck2, deck3]
     }
 }
