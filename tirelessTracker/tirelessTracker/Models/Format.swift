@@ -12,4 +12,6 @@ enum Format: String {
     case legacy
     case commander
     case pauper
+
+    static var allValues: [Format] = [.standard, .modern, .legacy, .commander, .pauper]
 }

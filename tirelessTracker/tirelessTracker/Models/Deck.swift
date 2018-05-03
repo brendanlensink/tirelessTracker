@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct Deck: Equatable, CustomStringConvertible {
     let created: Int
@@ -20,6 +21,30 @@ struct Deck: Equatable, CustomStringConvertible {
             desc +=  " v\(version)"
         }
         return desc + " - \(format.rawValue.capitalizingFirstLetter())"
+    }
+
+    func store() {
+        let realmDeck = RealmDeck(value: [
+            "created": created,
+            "name": name,
+            "format": format.rawValue,
+            "version": version ?? 0
+        ])
+        try? Realm.shared.write {
+            Realm.shared.add(realmDeck)
+        }
+    }
+
+    static func getStored() -> [Deck] {
+        var decks: [Deck] = []
+        let realmDecks = Realm.shared.objects(RealmDeck.self)
+
+        for realmDeck in realmDecks {
+            let toDeck = realmDeck.toDeck()
+            if !decks.contains(toDeck) { decks.append(toDeck) }
+        }
+
+        return decks
     }
 
     static func == (lhs: Deck, rhs: Deck) -> Bool {

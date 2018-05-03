@@ -28,7 +28,7 @@ class ViewMatchesVC: FormViewController {
                 $0.title = match.theirName
                 $0.value = match
                 $0.presentationMode = .show(controllerProvider: ControllerProvider.callback {
-                    ViewMatchVC()
+                    LogMatchVC()
                 }, onDismiss: { viewController in
                     _ = viewController.navigationController?.popViewController(animated: true)
                 })

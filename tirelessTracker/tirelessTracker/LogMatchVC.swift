@@ -10,7 +10,15 @@ import Eureka
 import Foundation
 import RealmSwift
 
-class LogMatchVC: FormViewController {
+class LogMatchVC: FormViewController, TypedRowControllerType {
+    // protocol conformance
+    var row: RowOf<Match>!
+    var onDismissCallback: ((UIViewController) -> Void)?
+
+    convenience public init(callback: ((UIViewController) -> Void)?) {
+        self.init(nibName: nil, bundle: nil)
+        onDismissCallback = callback
+    }
 
     var match: Match!
 
@@ -21,18 +29,23 @@ class LogMatchVC: FormViewController {
         animateScroll = true
         rowKeyboardSpacing = 20
 
-        match = Match()
+        if let row = row {
+            match = row.value
+        } else {
+            match = Match()
+        }
 
         // Create the Eureka form
         form +++ Section("Log a match!")
             <<< DateTimeInlineRow {
                 $0.title = "Time"
-                $0.value = Date()
+                $0.value = Date(milliseconds: match.datetime)
             }
             <<< PushRow<Deck> {
                 $0.title = "Deck"
                 $0.selectorTitle = "Select a deck"
-                $0.options = makeFakeDecks()
+                // need to add option to make decks, set this form match
+                $0.options = Deck.getStored()
 
                 $0.onChange {
                     self.match.deck = $0.value

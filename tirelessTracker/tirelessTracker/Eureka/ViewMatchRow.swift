@@ -10,7 +10,7 @@ import Eureka
 import Foundation
 
 final class ViewMatchRow: OptionsRow<PushSelectorCell<Match>>, PresenterRowType, RowType {
-    typealias PresenterRow = ViewMatchVC
+    typealias PresenterRow = LogMatchVC
 
     /// Defines how the view controller will be presented, pushed, etc.
     var presentationMode: PresentationMode<PresenterRow>?
@@ -22,7 +22,7 @@ final class ViewMatchRow: OptionsRow<PushSelectorCell<Match>>, PresenterRowType,
         super.init(tag: tag)
         presentationMode = .show(
             controllerProvider: ControllerProvider.callback {
-                ViewMatchVC { _ in }
+                LogMatchVC { _ in }
             },
             onDismiss: { viewController in
                 _ = viewController.navigationController?.popViewController(animated: true)

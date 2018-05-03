@@ -20,6 +20,9 @@
 		B3DDFE14209BBF230068C9C1 /* ViewMatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDFE13209BBF230068C9C1 /* ViewMatchesVC.swift */; };
 		B3DDFE16209BC4810068C9C1 /* ViewMatchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDFE15209BC4810068C9C1 /* ViewMatchRow.swift */; };
 		B3DDFE1A209BC5C00068C9C1 /* ViewMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDFE19209BC5C00068C9C1 /* ViewMatchVC.swift */; };
+		B3DDFE1C209BCAB20068C9C1 /* RealmDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDFE1B209BCAB20068C9C1 /* RealmDeck.swift */; };
+		B3DDFE1E209BCACB0068C9C1 /* RealmGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDFE1D209BCACB0068C9C1 /* RealmGame.swift */; };
+		B3DDFE20209BCD1E0068C9C1 /* AddDeckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDFE1F209BCD1E0068C9C1 /* AddDeckVC.swift */; };
 		B3E5F5E2209B5D62009D1BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E1209B5D62009D1BEF /* AppDelegate.swift */; };
 		B3E5F5E5209B5D62009D1BEF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */; };
 		B3E5F5E8209B5D62009D1BEF /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E7209B5D62009D1BEF /* Bundle+Extension.swift */; };
@@ -57,6 +60,9 @@
 		B3DDFE13209BBF230068C9C1 /* ViewMatchesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMatchesVC.swift; sourceTree = "<group>"; };
 		B3DDFE15209BC4810068C9C1 /* ViewMatchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMatchRow.swift; sourceTree = "<group>"; };
 		B3DDFE19209BC5C00068C9C1 /* ViewMatchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMatchVC.swift; sourceTree = "<group>"; };
+		B3DDFE1B209BCAB20068C9C1 /* RealmDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDeck.swift; sourceTree = "<group>"; };
+		B3DDFE1D209BCACB0068C9C1 /* RealmGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmGame.swift; sourceTree = "<group>"; };
+		B3DDFE1F209BCD1E0068C9C1 /* AddDeckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeckVC.swift; sourceTree = "<group>"; };
 		B3E5F5DE209B5D62009D1BEF /* tirelessTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tirelessTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E5F5E1209B5D62009D1BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
@@ -128,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				B3DDFE11209BB1520068C9C1 /* RealmMatch.swift */,
+				B3DDFE1B209BCAB20068C9C1 /* RealmDeck.swift */,
+				B3DDFE1D209BCACB0068C9C1 /* RealmGame.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -173,11 +181,12 @@
 		B3E5F5E3209B5D62009D1BEF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */,
+				B3DDFE1F209BCD1E0068C9C1 /* AddDeckVC.swift */,
 				B32E98B6209B732C00673D13 /* LogGameVC.swift */,
 				B3E5F60B209B6024009D1BEF /* LogMatchVC.swift */,
 				B3DDFE13209BBF230068C9C1 /* ViewMatchesVC.swift */,
 				B3DDFE19209BC5C00068C9C1 /* ViewMatchVC.swift */,
+				B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -389,6 +398,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DDFE1C209BCAB20068C9C1 /* RealmDeck.swift in Sources */,
+				B3DDFE20209BCD1E0068C9C1 /* AddDeckVC.swift in Sources */,
 				B3AF001E209B613500C69B6F /* MatchResult.swift in Sources */,
 				B3AF0020209B617500C69B6F /* Game.swift in Sources */,
 				B32E98B2209B6E8700673D13 /* String+UppercaseFirstLetter.swift in Sources */,
@@ -397,6 +408,7 @@
 				B3E5F5E8209B5D62009D1BEF /* Bundle+Extension.swift in Sources */,
 				B3DDFE16209BC4810068C9C1 /* ViewMatchRow.swift in Sources */,
 				B3AF001A209B60BC00C69B6F /* Format.swift in Sources */,
+				B3DDFE1E209BCACB0068C9C1 /* RealmGame.swift in Sources */,
 				B3DDFE14209BBF230068C9C1 /* ViewMatchesVC.swift in Sources */,
 				B3AF0018209B608F00C69B6F /* Deck.swift in Sources */,
 				B32E98B7209B732C00673D13 /* LogGameVC.swift in Sources */,
