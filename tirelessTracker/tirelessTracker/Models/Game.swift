@@ -24,6 +24,10 @@ class Game: Equatable {
         self.order = order
     }
 
+    var isComplete: Bool {
+        return result != nil
+    }
+
     var description: String {
         guard let result = result else {
             return "Incomplete"

@@ -60,19 +60,9 @@ class LogMatchVC: FormViewController {
             }.cellUpdate { cell, row in
                 cell.titleLabel?.textColor = row.isValid ? .black : .red
             }
-            <<< GameRow { row in
-                row.title = "Game 1"
-                row.value = Game(matchID: self.match.id, order: 1)
-                row.presentationMode = .show(controllerProvider: ControllerProvider.callback {
-                    LogGameVC()
-                }, onDismiss: { viewController in
-                    guard let logGameVC = viewController as? LogGameVC else {
-                        return
-                    }
-                    print("vC: \(logGameVC.row.value)")
-                        _ = viewController.navigationController?.popViewController(animated: true)
-                })
-            }
+            <<< makeGameRow(order: 0)
+            <<< makeGameRow(order: 1)
+            <<< makeGameRow(order: 2)
             <<< ButtonRow {
                 $0.title = "Save"
             }.onCellSelection { _, row in
@@ -82,6 +72,34 @@ class LogMatchVC: FormViewController {
 
                 print("ready!")
             }
+    }
+
+    private func makeGameRow(order: Int) -> GameRow {
+        return GameRow("game\(order)") {
+            $0.title = "Game \(order + 1)"
+            $0.value = Game(matchID: self.match.id, order: order)
+            $0.presentationMode = .show(controllerProvider: ControllerProvider.callback {
+                LogGameVC()
+            }, onDismiss: { viewController in
+                    guard let logGameVC = viewController as? LogGameVC, let game = logGameVC.row.value else {
+                        debugPrint("Failed to unwrap game from LogGameVC.")
+                        return
+                    }
+                    self.match.games.insert(game, at: order)
+                    _ = viewController.navigationController?.popViewController(animated: true)
+            })
+
+            let ruleRequiredViaClosure = RuleClosure<Game> { game in
+                game?.isComplete == true ? nil : ValidationError(msg: "Game not compeleted")
+            }
+
+            if order != 2 {
+                $0.add(rule: ruleRequiredViaClosure)
+                $0.validationOptions = .validatesOnChange
+            }
+        }.cellUpdate { cell, row in
+            cell.textLabel?.textColor = row.isValid ? .black : .red
+        }
     }
 
     func makeFakeDecks() -> [Deck] {

@@ -47,7 +47,7 @@ class LogGameVC: FormViewController, TypedRowControllerType {
             <<< ButtonRow {
                 $0.title = "Done"
             }.onCellSelection { _, row in
-                guard let errors = row.section?.form?.validate(), errors.isEmpty, var game = self.row.value else {
+                guard let errors = row.section?.form?.validate(), errors.isEmpty, let game = self.row.value else {
                     return
                 }
 
