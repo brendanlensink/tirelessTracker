@@ -1,0 +1,9 @@
+platform :ios, '11.0'
+
+target 'tirelessTracker' do
+
+  pod 'SwiftLint'
+  pod 'SnapKit'
+  pod 'Eureka'
+
+end

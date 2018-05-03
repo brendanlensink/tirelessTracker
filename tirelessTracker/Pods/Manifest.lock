@@ -1,0 +1,24 @@
+PODS:
+  - Eureka (4.1.1)
+  - SnapKit (4.0.0)
+  - SwiftLint (0.25.1)
+
+DEPENDENCIES:
+  - Eureka
+  - SnapKit
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Eureka
+    - SnapKit
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Eureka: b88fb930e42c79f8c03c373d0fcdc28c1d6c50ed
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
+
+PODFILE CHECKSUM: 8064dc361fa7cdd6d317b832a0586949111d9f28
+
+COCOAPODS: 1.5.0

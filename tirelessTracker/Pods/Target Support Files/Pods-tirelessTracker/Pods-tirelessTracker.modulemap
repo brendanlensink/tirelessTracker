@@ -1,0 +1,6 @@
+module Pods_tirelessTracker [system] {
+  umbrella header "Pods-tirelessTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

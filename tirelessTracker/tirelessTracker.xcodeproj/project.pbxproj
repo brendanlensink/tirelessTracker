@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F5BBE9D312B06DCB3D3F191 /* libPods-tirelessTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF91F651CB80C8161AEC40F /* libPods-tirelessTracker.a */; };
+		B3E5F5E2209B5D62009D1BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E1209B5D62009D1BEF /* AppDelegate.swift */; };
+		B3E5F5E5209B5D62009D1BEF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */; };
+		B3E5F5E8209B5D62009D1BEF /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E7209B5D62009D1BEF /* Bundle+Extension.swift */; };
+		B3E5F5EA209B5D63009D1BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E5F5E9209B5D63009D1BEF /* Assets.xcassets */; };
+		B3E5F5ED209B5D63009D1BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E5F5EB209B5D63009D1BEF /* LaunchScreen.storyboard */; };
+		B3E5F5F0209B5D63009D1BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E5F5EE209B5D63009D1BEF /* Main.storyboard */; };
+		B3E5F5FB209B5D64009D1BEF /* tirelessTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5FA209B5D64009D1BEF /* tirelessTrackerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3E5F5F7209B5D64009D1BEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E5F5D5209B5D62009D1BEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3E5F5DD209B5D62009D1BEF;
+			remoteInfo = tirelessTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7AF91F651CB80C8161AEC40F /* libPods-tirelessTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tirelessTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D8BFB98259EDBF9164F3AB /* Pods-tirelessTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tirelessTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tirelessTracker/Pods-tirelessTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		B3E5F5DE209B5D62009D1BEF /* tirelessTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tirelessTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E5F5E1209B5D62009D1BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
+		B3E5F5E7209B5D62009D1BEF /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "Helpers/Bundle+Extension.swift"; sourceTree = "<group>"; };
+		B3E5F5E9209B5D63009D1BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3E5F5EC209B5D63009D1BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3E5F5EF209B5D63009D1BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3E5F5F1209B5D63009D1BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E5F5F6209B5D64009D1BEF /* tirelessTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tirelessTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E5F5FA209B5D64009D1BEF /* tirelessTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tirelessTrackerTests.swift; sourceTree = "<group>"; };
+		B3E5F5FC209B5D64009D1BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E5F5FE209B5D64009D1BEF /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gemfile; path = ../Gemfile; sourceTree = "<group>"; };
+		B3E5F5FF209B5D64009D1BEF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		B3E5F600209B5D64009D1BEF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
+		B3E5F601209B5D64009D1BEF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B3E5F602209B5D64009D1BEF /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		F328C9BF342517D4090F771C /* Pods-tirelessTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tirelessTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-tirelessTracker/Pods-tirelessTracker.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3E5F5DA209B5D62009D1BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5BBE9D312B06DCB3D3F191 /* libPods-tirelessTracker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E5F5F3209B5D64009D1BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F5556AE77C78BC195192137 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AF91F651CB80C8161AEC40F /* libPods-tirelessTracker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BD58BB9B1DBAB7F496DB67B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6D8BFB98259EDBF9164F3AB /* Pods-tirelessTracker.debug.xcconfig */,
+				F328C9BF342517D4090F771C /* Pods-tirelessTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3E5F5D4209B5D62009D1BEF = {
+			isa = PBXGroup;
+			children = (
+				B3E5F5E0209B5D62009D1BEF /* tirelessTracker */,
+				B3E5F5F9209B5D64009D1BEF /* tirelessTrackerTests */,
+				B3E5F5FD209B5D64009D1BEF /* Supporting Files */,
+				B3E5F5DF209B5D62009D1BEF /* Products */,
+				1BD58BB9B1DBAB7F496DB67B /* Pods */,
+				0F5556AE77C78BC195192137 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3E5F5DF209B5D62009D1BEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3E5F5DE209B5D62009D1BEF /* tirelessTracker.app */,
+				B3E5F5F6209B5D64009D1BEF /* tirelessTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3E5F5E0209B5D62009D1BEF /* tirelessTracker */ = {
+			isa = PBXGroup;
+			children = (
+				B3E5F5E1209B5D62009D1BEF /* AppDelegate.swift */,
+				B3E5F5E9209B5D63009D1BEF /* Assets.xcassets */,
+				B3E5F5EB209B5D63009D1BEF /* LaunchScreen.storyboard */,
+				B3E5F5EE209B5D63009D1BEF /* Main.storyboard */,
+				B3E5F5F1209B5D63009D1BEF /* Info.plist */,
+				B3E5F5E3209B5D62009D1BEF /* View Controllers */,
+				B3E5F5E6209B5D62009D1BEF /* Helpers */,
+			);
+			path = tirelessTracker;
+			sourceTree = "<group>";
+		};
+		B3E5F5E3209B5D62009D1BEF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B3E5F5E6209B5D62009D1BEF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B3E5F5E7209B5D62009D1BEF /* Bundle+Extension.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B3E5F5F9209B5D64009D1BEF /* tirelessTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3E5F5FA209B5D64009D1BEF /* tirelessTrackerTests.swift */,
+				B3E5F5FC209B5D64009D1BEF /* Info.plist */,
+			);
+			path = tirelessTrackerTests;
+			sourceTree = "<group>";
+		};
+		B3E5F5FD209B5D64009D1BEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3E5F5FE209B5D64009D1BEF /* Gemfile */,
+				B3E5F5FF209B5D64009D1BEF /* .gitignore */,
+				B3E5F600209B5D64009D1BEF /* .swiftlint.yml */,
+				B3E5F601209B5D64009D1BEF /* README.md */,
+				B3E5F602209B5D64009D1BEF /* Podfile */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3E5F5DD209B5D62009D1BEF /* tirelessTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E5F605209B5D64009D1BEF /* Build configuration list for PBXNativeTarget "tirelessTracker" */;
+			buildPhases = (
+				DD79D05CA7C30DD26C08A625 /* [CP] Check Pods Manifest.lock */,
+				B3E5F5D9209B5D62009D1BEF /* Sources */,
+				B3E5F5DA209B5D62009D1BEF /* Frameworks */,
+				B3E5F5DB209B5D62009D1BEF /* Resources */,
+				B3E5F5DC209B5D62009D1BEF /* SwiftLint */,
+				3C14FEE72566CB249BD69396 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tirelessTracker;
+			productName = tirelessTracker;
+			productReference = B3E5F5DE209B5D62009D1BEF /* tirelessTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3E5F5F5209B5D64009D1BEF /* tirelessTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E5F608209B5D64009D1BEF /* Build configuration list for PBXNativeTarget "tirelessTrackerTests" */;
+			buildPhases = (
+				B3E5F5F2209B5D64009D1BEF /* Sources */,
+				B3E5F5F3209B5D64009D1BEF /* Frameworks */,
+				B3E5F5F4209B5D64009D1BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3E5F5F8209B5D64009D1BEF /* PBXTargetDependency */,
+			);
+			name = tirelessTrackerTests;
+			productName = tirelessTrackerTests;
+			productReference = B3E5F5F6209B5D64009D1BEF /* tirelessTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3E5F5D5209B5D62009D1BEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Steamclock;
+				TargetAttributes = {
+					B3E5F5DD209B5D62009D1BEF = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					B3E5F5F5209B5D64009D1BEF = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = B3E5F5DD209B5D62009D1BEF;
+					};
+				};
+			};
+			buildConfigurationList = B3E5F5D8209B5D62009D1BEF /* Build configuration list for PBXProject "tirelessTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3E5F5D4209B5D62009D1BEF;
+			productRefGroup = B3E5F5DF209B5D62009D1BEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3E5F5DD209B5D62009D1BEF /* tirelessTracker */,
+				B3E5F5F5209B5D64009D1BEF /* tirelessTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3E5F5DB209B5D62009D1BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E5F5F0209B5D63009D1BEF /* Main.storyboard in Resources */,
+				B3E5F5EA209B5D63009D1BEF /* Assets.xcassets in Resources */,
+				B3E5F5ED209B5D63009D1BEF /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E5F5F4209B5D64009D1BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C14FEE72566CB249BD69396 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tirelessTracker/Pods-tirelessTracker-resources.sh",
+				"${PODS_ROOT}/Eureka/Source/Resources/Eureka.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Eureka.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tirelessTracker/Pods-tirelessTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E5F5DC209B5D62009D1BEF /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ -f \"${PODS_ROOT}/SwiftLint/swiftlint\" ]; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n  echo \"warning: SwiftLint pod not found. Add pod 'SwiftLint' to the Podfile and install the pod or remove the SwiftLint build phase script.\"\nfi";
+		};
+		DD79D05CA7C30DD26C08A625 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tirelessTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3E5F5D9209B5D62009D1BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E5F5E2209B5D62009D1BEF /* AppDelegate.swift in Sources */,
+				B3E5F5E8209B5D62009D1BEF /* Bundle+Extension.swift in Sources */,
+				B3E5F5E5209B5D62009D1BEF /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E5F5F2209B5D64009D1BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E5F5FB209B5D64009D1BEF /* tirelessTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3E5F5F8209B5D64009D1BEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3E5F5DD209B5D62009D1BEF /* tirelessTracker */;
+			targetProxy = B3E5F5F7209B5D64009D1BEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3E5F5EB209B5D63009D1BEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E5F5EC209B5D63009D1BEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B3E5F5EE209B5D63009D1BEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E5F5EF209B5D63009D1BEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3E5F603209B5D64009D1BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3E5F604209B5D64009D1BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3E5F606209B5D64009D1BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6D8BFB98259EDBF9164F3AB /* Pods-tirelessTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH868RP95T;
+				INFOPLIST_FILE = tirelessTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = steamclock.tirelessTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3E5F607209B5D64009D1BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F328C9BF342517D4090F771C /* Pods-tirelessTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH868RP95T;
+				INFOPLIST_FILE = tirelessTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = steamclock.tirelessTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3E5F609209B5D64009D1BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH868RP95T;
+				INFOPLIST_FILE = tirelessTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = steamclock.tirelessTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tirelessTracker.app/tirelessTracker";
+			};
+			name = Debug;
+		};
+		B3E5F60A209B5D64009D1BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH868RP95T;
+				INFOPLIST_FILE = tirelessTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = steamclock.tirelessTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tirelessTracker.app/tirelessTracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3E5F5D8209B5D62009D1BEF /* Build configuration list for PBXProject "tirelessTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E5F603209B5D64009D1BEF /* Debug */,
+				B3E5F604209B5D64009D1BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E5F605209B5D64009D1BEF /* Build configuration list for PBXNativeTarget "tirelessTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E5F606209B5D64009D1BEF /* Debug */,
+				B3E5F607209B5D64009D1BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E5F608209B5D64009D1BEF /* Build configuration list for PBXNativeTarget "tirelessTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E5F609209B5D64009D1BEF /* Debug */,
+				B3E5F60A209B5D64009D1BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3E5F5D5209B5D62009D1BEF /* Project object */;
+}
