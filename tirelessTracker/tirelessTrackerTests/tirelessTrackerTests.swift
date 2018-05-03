@@ -9,7 +9,7 @@
 @testable import tirelessTracker
 import XCTest
 
-class tirelessTrackerTests: XCTestCase {
+class TirelessTrackerTests: XCTestCase {
 
     override func setUp() {
         super.setUp()

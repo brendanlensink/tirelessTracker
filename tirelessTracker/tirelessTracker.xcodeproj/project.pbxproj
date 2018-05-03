@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0F5BBE9D312B06DCB3D3F191 /* libPods-tirelessTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF91F651CB80C8161AEC40F /* libPods-tirelessTracker.a */; };
+		B32E98B2209B6E8700673D13 /* String+UppercaseFirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32E98B1209B6E8700673D13 /* String+UppercaseFirstLetter.swift */; };
+		B32E98B4209B72E800673D13 /* GameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32E98B3209B72E800673D13 /* GameRow.swift */; };
+		B32E98B7209B732C00673D13 /* LogGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32E98B6209B732C00673D13 /* LogGameVC.swift */; };
+		B3AF0018209B608F00C69B6F /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF0017209B608F00C69B6F /* Deck.swift */; };
+		B3AF001A209B60BC00C69B6F /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF0019209B60BC00C69B6F /* Format.swift */; };
+		B3AF001C209B610100C69B6F /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF001B209B610100C69B6F /* Match.swift */; };
+		B3AF001E209B613500C69B6F /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF001D209B613500C69B6F /* MatchResult.swift */; };
+		B3AF0020209B617500C69B6F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF001F209B617500C69B6F /* Game.swift */; };
+		B3AF0022209B61E000C69B6F /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF0021209B61E000C69B6F /* Identifier.swift */; };
 		B3E5F5E2209B5D62009D1BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E1209B5D62009D1BEF /* AppDelegate.swift */; };
 		B3E5F5E5209B5D62009D1BEF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */; };
 		B3E5F5E8209B5D62009D1BEF /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5E7209B5D62009D1BEF /* Bundle+Extension.swift */; };
@@ -15,6 +24,8 @@
 		B3E5F5ED209B5D63009D1BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E5F5EB209B5D63009D1BEF /* LaunchScreen.storyboard */; };
 		B3E5F5F0209B5D63009D1BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E5F5EE209B5D63009D1BEF /* Main.storyboard */; };
 		B3E5F5FB209B5D64009D1BEF /* tirelessTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F5FA209B5D64009D1BEF /* tirelessTrackerTests.swift */; };
+		B3E5F60C209B6024009D1BEF /* LogMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5F60B209B6024009D1BEF /* LogMatchVC.swift */; };
+		B3F725CD209B698600C9E17F /* Date+ToMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F725CC209B698600C9E17F /* Date+ToMS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +41,15 @@
 /* Begin PBXFileReference section */
 		7AF91F651CB80C8161AEC40F /* libPods-tirelessTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tirelessTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D8BFB98259EDBF9164F3AB /* Pods-tirelessTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tirelessTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tirelessTracker/Pods-tirelessTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		B32E98B1209B6E8700673D13 /* String+UppercaseFirstLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UppercaseFirstLetter.swift"; sourceTree = "<group>"; };
+		B32E98B3209B72E800673D13 /* GameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRow.swift; sourceTree = "<group>"; };
+		B32E98B6209B732C00673D13 /* LogGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogGameVC.swift; sourceTree = "<group>"; };
+		B3AF0017209B608F00C69B6F /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		B3AF0019209B60BC00C69B6F /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		B3AF001B209B610100C69B6F /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		B3AF001D209B613500C69B6F /* MatchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResult.swift; sourceTree = "<group>"; };
+		B3AF001F209B617500C69B6F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		B3AF0021209B61E000C69B6F /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		B3E5F5DE209B5D62009D1BEF /* tirelessTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tirelessTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E5F5E1209B5D62009D1BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
@@ -46,6 +66,8 @@
 		B3E5F600209B5D64009D1BEF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
 		B3E5F601209B5D64009D1BEF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B3E5F602209B5D64009D1BEF /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		B3E5F60B209B6024009D1BEF /* LogMatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMatchVC.swift; sourceTree = "<group>"; };
+		B3F725CC209B698600C9E17F /* Date+ToMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ToMS.swift"; sourceTree = "<group>"; };
 		F328C9BF342517D4090F771C /* Pods-tirelessTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tirelessTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-tirelessTracker/Pods-tirelessTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +107,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B32E98B5209B72F100673D13 /* Eureka */ = {
+			isa = PBXGroup;
+			children = (
+				B32E98B3209B72E800673D13 /* GameRow.swift */,
+			);
+			path = Eureka;
+			sourceTree = "<group>";
+		};
 		B3E5F5D4209B5D62009D1BEF = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +145,9 @@
 				B3E5F5EE209B5D63009D1BEF /* Main.storyboard */,
 				B3E5F5F1209B5D63009D1BEF /* Info.plist */,
 				B3E5F5E3209B5D62009D1BEF /* View Controllers */,
+				B32E98B5209B72F100673D13 /* Eureka */,
 				B3E5F5E6209B5D62009D1BEF /* Helpers */,
+				B3E5F60D209B603A009D1BEF /* Models */,
 			);
 			path = tirelessTracker;
 			sourceTree = "<group>";
@@ -124,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				B3E5F5E4209B5D62009D1BEF /* SettingsViewController.swift */,
+				B32E98B6209B732C00673D13 /* LogGameVC.swift */,
+				B3E5F60B209B6024009D1BEF /* LogMatchVC.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -132,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				B3E5F5E7209B5D62009D1BEF /* Bundle+Extension.swift */,
+				B3F725CC209B698600C9E17F /* Date+ToMS.swift */,
+				B32E98B1209B6E8700673D13 /* String+UppercaseFirstLetter.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -155,6 +191,19 @@
 				B3E5F602209B5D64009D1BEF /* Podfile */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3E5F60D209B603A009D1BEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3AF0017209B608F00C69B6F /* Deck.swift */,
+				B3AF0019209B60BC00C69B6F /* Format.swift */,
+				B3AF001B209B610100C69B6F /* Match.swift */,
+				B3AF001D209B613500C69B6F /* MatchResult.swift */,
+				B3AF001F209B617500C69B6F /* Game.swift */,
+				B3AF0021209B61E000C69B6F /* Identifier.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,9 +363,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AF001E209B613500C69B6F /* MatchResult.swift in Sources */,
+				B3AF0020209B617500C69B6F /* Game.swift in Sources */,
+				B32E98B2209B6E8700673D13 /* String+UppercaseFirstLetter.swift in Sources */,
 				B3E5F5E2209B5D62009D1BEF /* AppDelegate.swift in Sources */,
 				B3E5F5E8209B5D62009D1BEF /* Bundle+Extension.swift in Sources */,
+				B3AF001A209B60BC00C69B6F /* Format.swift in Sources */,
+				B3AF0018209B608F00C69B6F /* Deck.swift in Sources */,
+				B32E98B7209B732C00673D13 /* LogGameVC.swift in Sources */,
+				B3AF0022209B61E000C69B6F /* Identifier.swift in Sources */,
 				B3E5F5E5209B5D62009D1BEF /* SettingsViewController.swift in Sources */,
+				B3E5F60C209B6024009D1BEF /* LogMatchVC.swift in Sources */,
+				B3F725CD209B698600C9E17F /* Date+ToMS.swift in Sources */,
+				B32E98B4209B72E800673D13 /* GameRow.swift in Sources */,
+				B3AF001C209B610100C69B6F /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +540,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GH868RP95T;
 				INFOPLIST_FILE = tirelessTracker/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = steamclock.tirelessTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -496,7 +559,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GH868RP95T;
 				INFOPLIST_FILE = tirelessTracker/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = steamclock.tirelessTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -512,7 +578,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GH868RP95T;
 				INFOPLIST_FILE = tirelessTrackerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = steamclock.tirelessTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -529,7 +599,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GH868RP95T;
 				INFOPLIST_FILE = tirelessTrackerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = steamclock.tirelessTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
