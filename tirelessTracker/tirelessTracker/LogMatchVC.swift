@@ -33,17 +33,24 @@ class LogMatchVC: FormViewController {
                 $0.selectorTitle = "Select a deck"
                 $0.options = makeFakeDecks()
 
+                $0.onChange {
+                    self.match.deck = $0.value
+                }
+
                 $0.add(rule: RuleRequired())
                 $0.validationOptions = .validatesOnChange
                 // $0.value = initial selection
-            }
-            .cellUpdate { cell, row in
+            }.cellUpdate { cell, row in
                 cell.textLabel?.textColor = row.isValid ? .black : .red
             }
             <<< TextRow {
                 $0.tag = "them"
                 $0.title = "Their Name"
                 $0.placeholder = "Jane Doe"
+
+                $0.onChange {
+                    self.match.theirName = $0.value
+                }
 
                 $0.add(rule: RuleRequired())
                 $0.validationOptions = .validatesOnChange
@@ -54,6 +61,10 @@ class LogMatchVC: FormViewController {
                 $0.tag = "theirDeck"
                 $0.title = "Their Deck"
                 $0.placeholder = "Good Stuff"
+
+                $0.onChange {
+                    self.match.theirDeck = $0.value
+                }
 
                 $0.add(rule: RuleRequired())
                 $0.validationOptions = .validatesOnChange
@@ -70,7 +81,7 @@ class LogMatchVC: FormViewController {
                     return
                 }
 
-                print("ready!")
+                print("ready! \(self.match.description)")
             }
     }
 

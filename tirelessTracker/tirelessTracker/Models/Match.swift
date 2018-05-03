@@ -14,7 +14,7 @@ class Match {
     let id: MatchID = Match.generateID()
     let datetime: Int = Date().millisecondsSince1970
     var deck: Deck?
-    var theirDeck: Deck?
+    var theirDeck: String?
     var result: MatchResult? // TODO: change to computed property
     var games: [Game] = []
 
@@ -24,6 +24,10 @@ class Match {
     var notes: String?
 
     init() {}
+
+    var description: String {
+        return "\(deck) \(theirDeck) \(theirName)"
+    }
 
     private static func generateID() -> MatchID {
         return MatchID(rawValue: UUID().uuidString + String(Date().millisecondsSince1970))
