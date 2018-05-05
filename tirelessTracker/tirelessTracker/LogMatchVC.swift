@@ -37,7 +37,7 @@ class LogMatchVC: FormViewController, TypedRowControllerType {
 
         // Create the Eureka form
         form +++ Section("Log a match!")
-            <<< DateTimeInlineRow {
+            <<< DateTimeInlineRow("created") {
                 $0.title = "Time"
                 $0.value = Date(milliseconds: match.datetime)
             }
@@ -96,6 +96,7 @@ class LogMatchVC: FormViewController, TypedRowControllerType {
                 }
 
                 self.match.store()
+                self.reload()
             }
     }
 
@@ -127,10 +128,13 @@ class LogMatchVC: FormViewController, TypedRowControllerType {
         }
     }
 
-    func makeFakeDecks() -> [Deck] {
-        let deck1 = Deck(created: Date().millisecondsSince1970, name: "Test Deck 1", format: .legacy, version: nil)
-        let deck2 = Deck(created: Date().millisecondsSince1970, name: "Test Deck 2", format: .modern, version: nil)
-        let deck3 = Deck(created: Date().millisecondsSince1970, name: "Test Deck 3", format: .legacy, version: nil)
-        return [deck1, deck2, deck3]
+    private func reload() {
+        (form.rowBy(tag: "created") as? DateTimeRow)?.value = Date(milliseconds: match.datetime)
+        form.rowBy(tag: "them")?.baseValue = nil
+        form.rowBy(tag: "theirDeck")?.baseValue = nil
+        form.rowBy(tag: "game0")?.baseValue = nil
+        form.rowBy(tag: "game1")?.baseValue = nil
+        form.rowBy(tag: "game2")?.baseValue = nil
+        tableView.reloadData()
     }
 }
