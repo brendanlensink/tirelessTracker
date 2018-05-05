@@ -19,9 +19,7 @@ class ViewMatchesVC: FormViewController {
 
         form +++ Section("Matches")
 
-        let realmMatches = Realm.shared.objects(RealmMatch.self)
-        for realmMatch in realmMatches {
-            let match = realmMatch.toMatch()
+        for match in Match.getStored() {
             matches.append(match)
 
             form.last! <<< ViewMatchRow {

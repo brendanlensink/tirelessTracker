@@ -88,6 +88,18 @@ class Match: Equatable {
         }
     }
 
+    static func getStored() -> [Match] {
+        var matches: [Match] = []
+        let realmMatches = Realm.shared.objects(RealmMatch.self)
+
+        for realmMatch in realmMatches {
+            let toMatch = realmMatch.toMatch()
+            if !matches.contains(toMatch) { matches.append(toMatch) }
+        }
+
+        return matches
+    }
+
     static func == (lhs: Match, rhs: Match) -> Bool {
         return lhs.id == rhs.id
     }
