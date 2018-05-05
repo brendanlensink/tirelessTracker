@@ -9,30 +9,32 @@
 import Foundation
 import RealmSwift
 
-struct Deck: Equatable, CustomStringConvertible {
+struct Deck {
     let created: Int
     let name: String
     let format: Format
     let version: Int?
 
-    var description: String {
-        var desc = name
-        if let version = version {
-            desc +=  " v\(version)"
+    func store() {
+        try? Realm.shared.write {
+            Realm.shared.add(toRealmDeck())
         }
-        return desc + " - \(format.rawValue.capitalizingFirstLetter())"
     }
 
-    func store() {
-        let realmDeck = RealmDeck(value: [
+    func delete() {
+        try? Realm.shared.write {
+            let deck = Realm.shared.objects(RealmDeck.self).filter("name = '\(name)' AND created = \(created)")
+            Realm.shared.delete(deck)
+        }
+    }
+
+    private func toRealmDeck() -> RealmDeck {
+        return RealmDeck(value: [
             "created": created,
             "name": name,
             "format": format.rawValue,
             "version": version ?? 0
         ])
-        try? Realm.shared.write {
-            Realm.shared.add(realmDeck)
-        }
     }
 
     static func getStored() -> [Deck] {
@@ -46,8 +48,26 @@ struct Deck: Equatable, CustomStringConvertible {
 
         return decks
     }
+}
 
+extension Deck: CustomStringConvertible {
+    var description: String {
+        var desc = name
+        if let version = version {
+            desc +=  " v\(version)"
+        }
+        return desc + " - \(format.rawValue.capitalizingFirstLetter())"
+    }
+}
+
+extension Deck: Equatable {
     static func == (lhs: Deck, rhs: Deck) -> Bool {
         return lhs.name == rhs.name && lhs.format == rhs.format
+    }
+}
+
+extension Deck: Hashable {
+    var hashValue: Int {
+        return created + name.hashValue
     }
 }

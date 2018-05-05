@@ -12,11 +12,15 @@ import RealmSwift
 
 class AddDeckVC: FormViewController {
 
+    private var decks = Set<Deck>()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        decks = Set(Deck.getStored())
+
         // Create the Eureka form
-        form +++ Section("Log a match!")
+        form +++ Section("Add a new deck!")
             <<< TextRow("name") {
                 $0.title = "Deck Name"
                 $0.placeholder = "Good Stuff"
@@ -50,7 +54,41 @@ class AddDeckVC: FormViewController {
 
                 let newDeck = Deck(created: Date().millisecondsSince1970, name: name, format: format, version: 0)
                 newDeck.store()
-                print("saved")
+                self.decks.insert(newDeck)
+                self.form.last! <<< LabelRow {
+                    $0.title = newDeck.description
+                }
+
+                self.reloadDecks()
             }
+
+        +++ Section("Decks")
+
+        for deck in decks {
+            form.last! <<< addDeckRow(for: deck)
+        }
+    }
+
+    private func reloadDecks() {
+        for row in form.rows {
+            row.baseValue = nil
+            row.reload()
+        }
+
+        tableView.reloadData()
+    }
+
+    private func addDeckRow(for deck: Deck) -> LabelRow {
+        return LabelRow {
+            $0.title = deck.description
+
+            let deleteAction = SwipeAction(style: .destructive, title: "Delete") { _, _, completionHandler in
+                self.decks.remove(deck)
+                deck.delete()
+                completionHandler?(true)
+            }
+            deleteAction.image = UIImage(named: "icon-trash")
+            $0.trailingSwipe.actions = [deleteAction]
+        }
     }
 }
