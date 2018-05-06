@@ -23,7 +23,6 @@ class ViewMatchesVC: FormViewController {
             matches.append(match)
 
             form.last! <<< ViewMatchRow {
-                $0.title = match.theirName
                 $0.value = match
                 $0.presentationMode = .show(controllerProvider: ControllerProvider.callback {
                     LogMatchVC()

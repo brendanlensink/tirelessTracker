@@ -16,6 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        let newSchemaVersion: UInt64 = 1
+        let config = Realm.Configuration(
+            schemaVersion: newSchemaVersion,
+            migrationBlock: { migration, oldSchemaVersion in
+                if oldSchemaVersion < newSchemaVersion {
+                    migration.enumerateObjects(ofType: RealmMatch.className()) { _, newObject in
+                        newObject!["theirName"] = nil
+                    }
+                }
+        })
+
+        Realm.Configuration.defaultConfiguration = config
+        _ = try? Realm()
+
         return true
     }
 }

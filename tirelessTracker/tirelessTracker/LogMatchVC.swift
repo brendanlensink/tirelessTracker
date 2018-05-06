@@ -44,6 +44,7 @@ class LogMatchVC: FormViewController, TypedRowControllerType {
             <<< PushRow<Deck> {
                 $0.title = "Deck"
                 $0.selectorTitle = "Select a deck"
+                $0.value = match.deck
                 // need to add option to make decks, set this form match
                 $0.options = Deck.getStored()
 
@@ -61,6 +62,7 @@ class LogMatchVC: FormViewController, TypedRowControllerType {
                 $0.tag = "them"
                 $0.title = "Their Name"
                 $0.placeholder = "Jane Doe"
+                $0.value = self.match.theirName
 
                 $0.onChange {
                     self.match.theirName = $0.value
@@ -75,6 +77,7 @@ class LogMatchVC: FormViewController, TypedRowControllerType {
                 $0.tag = "theirDeck"
                 $0.title = "Their Deck"
                 $0.placeholder = "Good Stuff"
+                $0.value = self.match.theirDeck
 
                 $0.onChange {
                     self.match.theirDeck = $0.value

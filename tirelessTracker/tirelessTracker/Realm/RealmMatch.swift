@@ -13,6 +13,7 @@ class RealmMatch: Object {
     @objc dynamic var id: String = ""
     @objc dynamic var datetime: Int = -1
     @objc dynamic var deck: RealmDeck?
+    @objc dynamic var theirName: String?
     @objc dynamic var theirDeck: String?
     let result = RealmOptional<Int>()
     let games = List<RealmGame>()
@@ -25,6 +26,7 @@ class RealmMatch: Object {
 
         let toMatch = Match()
         toMatch.deck = deck?.toDeck()
+        toMatch.theirName = theirName
         toMatch.theirDeck = theirDeck
         toMatch.games = toGames
         return toMatch

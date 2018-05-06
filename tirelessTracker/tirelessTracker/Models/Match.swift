@@ -67,7 +67,8 @@ class Match: Equatable {
             "id": id.rawValue,
             "datetime": datetime,
             "deck": myRealmDeck,
-            "theirDeck": theirDeck ?? ""
+            "theirName": theirName,
+            "theirDeck": theirDeck
         ])
 
         for game in games {
